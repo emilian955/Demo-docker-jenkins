@@ -10,6 +10,7 @@ pipeline{
 
             steps{
                 echo 'init the app'
+                sh 'python3 scripts/init.py'
             }
 
         }
@@ -17,6 +18,7 @@ pipeline{
 
             steps{
                 echo 'build the app'
+                sh 'python3 scripts/build.py'
             }
 
         }
@@ -28,6 +30,7 @@ pipeline{
             }
             steps{  
                 echo 'test the app'
+                sh 'python3 scripts/test.py'
             }
 
         }
@@ -35,7 +38,7 @@ pipeline{
 
             steps{
                 echo 'deploy the app'
-                echo "deploying version ${Version}"
+                sh 'python3 scripts/deploy.py'
             }
 
         }
