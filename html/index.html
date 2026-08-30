@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ro">
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dumitru Mihăilă",
+      "jobTitle": "Conferențiar universitar doctor habilitat",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universitatea „Ștefan cel Mare” din Suceava"
+      },
+      "url": "https://dumitrumihaila.ro",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=sJ2FogMAAAAJ&hl=ro",
+        "https://www.researchgate.net/profile/Dumitru-Mihaila",
+        "https://orcid.org/0000-0002-5876-7963"
+      ]
+    }
+</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dumitru Mihăilă | Profesor de Geografie, Meteorologie și Climatologie - Suceava</title>
+  <meta name="description" content="Pagina oficială a Conf. univ. dr. habil. Dumitru Mihăilă, specialist în geografie, meteorologie și climatologie la Universitatea „Ștefan cel Mare” din Suceava. Cercetări în climatologie, riscuri climatice și calitatea aerului.">
+  <meta name="keywords" content="Dumitru Mihăilă, geografie, climatologie, meteorologie, Suceava, Universitatea Ștefan cel Mare, cercetare climatică">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="canonical" href="https://dumitrumihaila.ro/">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Sans+3:wght@300;400;600&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <style>
+    /* === DESIGN TOKENS === */
+    :root {
+      --forest:    #003366;
+      --pine:      #1a4d8f;
+      --sage:      #4a7fbf;
+      --mist:      #e8f0fa;
+      --parchment: #f5f8fc;
+      --ink:       #1A1A18;
+      --graphite:  #4A4A46;
+      --gold:      #B88A3C;
+      --white:     #FFFFFF;
+      --border:    #c8d8e8;
+
+      --ff-display: 'Playfair Display', Georgia, serif;
+      --ff-body:    'Source Sans 3', system-ui, sans-serif;
+      --ff-text:    'Source Serif 4', Georgia, serif;
+
+      --max-w: 1100px;
+      --sidebar-w: 280px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      color: var(--ink);
+      background: var(--parchment);
+      line-height: 1.6;
+    }
+
+    a { color: var(--pine); text-decoration: none; }
+    a:hover { color: var(--gold); }
+
+    /* === TOP NAV BAR === */
+    .topbar {
+      background: var(--forest);
+      color: var(--mist);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.45rem 2rem; }
+    .topbar a { color: var(--mist); opacity: 0.8; }
+    .topbar a:hover { opacity: 1; color: var(--gold); }
+    .topbar-right { display: flex; gap: 1.4rem; }
+
+    /* === MAIN NAV === */
+    nav.main-nav {
+      background: var(--white);
+      border-bottom: 3px solid var(--forest);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,51,102,0.08);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      gap: 0;
+    }
+    .nav-brand {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      color: var(--forest);
+      font-weight: 700;
+      padding: 1rem 1.5rem 1rem 0;
+      border-right: 1px solid var(--border);
+      margin-right: 1rem;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      gap: 0;
+      list-style: none;
+    }
+    .nav-links a {
+      display: block;
+      padding: 1.1rem 1.2rem;
+      font-size: 0.83rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--graphite);
+      border-bottom: 3px solid transparent;
+      margin-bottom: -3px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--forest);
+      border-bottom-color: var(--gold);
+    }
+
+    /* === HERO BANNER === */
+    .hero {
+      background: var(--forest);
+      color: var(--white);
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr var(--sidebar-w);
+      align-items: end;
+      min-height: 340px;
+      padding: 0 2rem;
+    }
+    .hero-text {
+      padding: 3.5rem 2.5rem 3.5rem 0;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.9rem;
+    }
+    .hero-title {
+      font-family: var(--ff-display);
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+    }
+    .hero-subtitle {
+      font-family: var(--ff-text);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 1.5rem;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .tag {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 2px;
+      padding: 0.22rem 0.75rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.85);
+    }
+    .hero-photo-col {
+      align-self: stretch;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 0;
+    }
+    .hero-photo-wrap {
+      width: 210px;
+      height: 260px;
+      background: var(--pine);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255,255,255,0.15);
+      border-bottom: none;
+    }
+    .hero-photo-placeholder {
+      font-family: var(--ff-display);
+      font-size: 5rem;
+      font-weight: 900;
+      color: rgba(255,255,255,0.2);
+      user-select: none;
+    }
+
+    /* === LAYOUT === */
+    .page-body {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr var(--sidebar-w);
+      gap: 0;
+      padding: 0 2rem;
+      align-items: start;
+    }
+    .main-col { padding: 3rem 3rem 3rem 0; border-right: 1px solid var(--border); }
+    .side-col { padding: 3rem 0 3rem 2rem; }
+
+    /* === SECTION HEADINGS === */
+    .section { margin-bottom: 3.5rem; }
+    .section:last-child { margin-bottom: 0; }
+
+    .sec-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .sec-title {
+      font-family: var(--ff-display);
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* === INTRO TEXT === */
+    .intro-text {
+      font-family: var(--ff-text);
+      font-size: 1.07rem;
+      line-height: 1.8;
+      color: var(--graphite);
+      margin-bottom: 1.2rem;
+    }
+    .intro-text strong { color: var(--forest); font-weight: 600; }
+
+    /* === COURSES === */
+    .courses-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .course-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--sage);
+      padding: 1rem 1.2rem;
+      border-radius: 2px;
+    }
+    .course-code {
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+    .course-name {
+      font-weight: 600;
+      color: var(--forest);
+      font-size: 0.88rem;
+      line-height: 1.4;
+    }
+
+    /* === PUBLICATIONS === */
+    .pub-list { list-style: none; }
+    .pub-list li {
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .pub-list li:last-child { border-bottom: none; }
+    .pub-badge {
+      background: var(--mist);
+      border: 1px solid var(--border);
+      color: var(--sage);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.5rem;
+      border-radius: 2px;
+      white-space: nowrap;
+      margin-top: 0.15rem;
+    }
+    .pub-badge.isi { background: #e8f0fa; color: #003366; border-color: #a8c8e8; }
+    .pub-badge.bdi { background: #eef4fa; color: #1a4d8f; border-color: #b8d4e8; }
+    .pub-badge.book { background: #F4EDE8; color: #6B4020; border-color: #D9C0A8; }
+    .pub-title { font-family: var(--ff-text); font-style: italic; color: var(--ink); font-size: 0.93rem; line-height: 1.5; }
+    .pub-meta { font-size: 0.8rem; color: var(--graphite); margin-top: 0.2rem; }
+    .pub-meta strong { color: var(--forest); }
+
+    /* === SIDEBAR CARD === */
+    .side-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+    .side-card-title {
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--forest);
+      margin-bottom: 1rem;
+      padding-bottom: 0.7rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.7rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.83rem;
+      color: var(--graphite);
+    }
+    .contact-icon {
+      width: 16px;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+      color: var(--sage);
+    }
+    .contact-row a { color: var(--pine); font-size: 0.83rem; }
+
+    /* Skills */
+    .skill-list { list-style: none; }
+    .skill-list li {
+      font-size: 0.82rem;
+      color: var(--graphite);
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--mist);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .skill-list li:last-child { border-bottom: none; }
+    .skill-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--sage);
+      flex-shrink: 0;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.8rem;
+    }
+    .stat-box {
+      background: var(--forest);
+      color: var(--white);
+      border-radius: 3px;
+      padding: 1rem 1.2rem;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--ff-display);
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
+      color: var(--gold);
+    }
+    .stat-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-top: 0.3rem;
+    }
+
+    /* === GRANTS TIMELINE === */
+    .timeline { list-style: none; }
+    .tl-item { display: grid; grid-template-columns: 80px 1fr; gap: 1rem; margin-bottom: 1.4rem; }
+    .tl-year {
+      font-family: var(--ff-display);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--gold);
+      padding-top: 0.2rem;
+      text-align: right;
+    }
+    .tl-content { border-left: 2px solid var(--border); padding-left: 1rem; padding-bottom: 1rem; }
+    .tl-name { font-weight: 600; font-size: 0.9rem; color: var(--forest); margin-bottom: 0.25rem; }
+    .tl-desc { font-size: 0.82rem; color: var(--graphite); }
+
+    /* === FOOTER === */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      font-size: 0.8rem;
+      margin-top: 4rem;
+    }
+    footer strong { color: rgba(255,255,255,0.8); }
+    footer a { color: rgba(255,255,255,0.65); }
+    footer a:hover { color: var(--gold); }
+/* Dark mode */
+body.dark { --parchment: #0f1419; --ink: #e0e0e0; --graphite: #b8b8b8; --white: #1a2230; --border: #2e3e4e; --mist: #162030; }
+body.dark .topbar { background: #060e18; }
+body.dark nav.main-nav { background: #111c28; border-bottom-color: #2e3e4e; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+body.dark .nav-brand { color: #ffffff; border-right-color: #2e3e4e; }
+body.dark .nav-links a { color: #a0b0c0; }
+body.dark .nav-links a:hover, body.dark .nav-links a.active { color: #7ab8e0; border-bottom-color: var(--gold); }
+body.dark .hero { background: #060e18; }
+body.dark .hero-title { color: #ffffff; }
+body.dark .sec-title { color: #ffffff; border-bottom-color: #2e3e4e; }
+body.dark .sec-label { color: var(--gold); }
+body.dark .intro-text { color: #b8b8b8; }
+body.dark .intro-text strong { color: #7ab8e0; }
+body.dark .course-card { background: #1a2230; border-color: #2e3e4e; border-left-color: #4a80b0; }
+body.dark .course-code { color: var(--gold); }
+body.dark .course-name { color: #ffffff; }
+body.dark .stat-box { background: #0a1520; }
+body.dark .side-card { background: #1a2230; border-color: #2e3e4e; }
+body.dark .side-card-title { color: #ffffff; border-bottom-color: #2e3e4e; }
+body.dark .contact-row { color: #a0b0c0; }
+body.dark .contact-row a { color: #7ab8e0; }
+body.dark .contact-icon { color: #4a80b0; }
+body.dark .pub-list li { border-bottom-color: #2e3e4e; }
+body.dark .pub-title { color: #d0d0d0; }
+body.dark .pub-meta { color: #a0a0a0; }
+body.dark .pub-meta strong { color: #7ab8e0; }
+body.dark .pub-badge { background: #162030; border-color: #2e3e4e; color: #7ab8e0; }
+body.dark .pub-badge.isi { background: #0f1e30; color: #7ab8e0; border-color: #2a4a6a; }
+body.dark .pub-badge.bdi { background: #0f1e30; color: #5a9abf; border-color: #2a4a6a; }
+body.dark .pub-badge.book { background: #1e1a14; color: #d0a060; border-color: #4a3a2a; }
+body.dark .announcement { background: #1a2230; border-color: #2e3e4e; }
+body.dark .announcement-title { color: #ffffff; }
+body.dark .announcement-date { color: #5a9abf; }
+body.dark .announcement.pinned .announcement-date { color: var(--gold); }
+body.dark .announcement-body { color: #b8b8b8; }
+body.dark .announcement-tag.info { background: #0f1e30; color: #7ab8e0; border-color: #2a4a6a; }
+body.dark .announcement-tag.exam { background: #0f201a; color: #60c080; border-color: #2a4a3a; }
+body.dark .announcement-tag.urgent { background: #201a0f; color: #d0a050; border-color: #4a3a2a; }
+body.dark .file-card { background: #1a2230; border-color: #2e3e4e; }
+body.dark .file-name { color: #ffffff; }
+body.dark .file-meta { color: #a0a0a0; }
+body.dark #search-input, body.dark #tag-filter { background: #1a2230; color: #e0e0e0; border-color: #2e3e4e; }
+body.dark footer { background: #050a10; }
+body.dark a { color: #7ab8e0; }
+body.dark .tl-content { border-left-color: #2e3e4e; }
+body.dark .tl-name { color: #ffffff; }
+body.dark .tl-desc { color: #a0a0a0; }
+body.dark .hero-photo-wrap { background: #0a1520; }
+
+/* Scroll animations */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+
+    /* === RESPONSIVE === */
+    @media (max-width: 860px) {
+      .hero-inner { grid-template-columns: 1fr; min-height: auto; }
+      .hero-photo-col { display: none; }
+      .page-body { grid-template-columns: 1fr; }
+      .main-col { padding: 2rem 0; border-right: none; border-bottom: 1px solid var(--border); }
+      .side-col { padding: 2rem 0; }
+      .courses-grid { grid-template-columns: 1fr; }
+      .nav-brand { display: none; }
+      .nav-links { flex-wrap: wrap; }
+      .nav-links a { padding: 0.8rem 0.8rem; font-size: 0.75rem; }
+      .topbar { flex-direction: column; gap: 0.3rem; text-align: center; }
+      .topbar-right { flex-wrap: wrap; justify-content: center; }
+    }
+</style>
+</head>
+<body>
+  
+  <div class="topbar">
+    <span>Universitatea „Ștefan cel Mare" din Suceava</span>
+    <div class="topbar-right">
+      <a href="https://fig.usv.ro/departament-geografie/">Departamentul de Geografie</a>
+      <a href="https://fig.usv.ro">FIGSS</a>
+      <a href="https://www.usv.ro">USV</a>
+      <a href="en/index.html" style="background:rgba(255,255,255,0.15);padding:0.2rem 0.6rem;border-radius:2px;font-weight:700;">EN</a>
+      <a href="#" id="dark-toggle" onclick="toggleDark();return false;" style="background:rgba(255,255,255,0.15);padding:0.2rem 0.6rem;border-radius:2px;font-weight:700;" title="Dark mode">☾</a>
+    </div>
+  </div>
+
+  
+  <nav class="main-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <div class="nav-brand">D. Mihăilă</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Acasă</a></li>
+        <li><a href="teaching.html">Cursuri</a></li>
+        <li><a href="publications.html">Publicații</a></li>
+        <li><a href="grants.html">Granturi</a></li>
+        <li><a href="doctorat.html">Doctorat</a></li>
+        <li><a href="materiale.html">Materiale</a></li>
+        <li><a href="anunturi.html">Anunțuri</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Facultatea de Istorie, Geografie și Științe Sociale</p>
+        <h1 class="hero-title">Conf. univ. dr. habil.<br>Dumitru Mihăilă</h1>
+        <p class="hero-subtitle">Meteorologie &amp; Climatologie · Universitatea „Ștefan cel Mare" Suceava</p>
+        <div class="hero-tags">
+          <span class="tag">Climatologie</span>
+          <span class="tag">Meteorologie</span>
+          <span class="tag">Topoclimatologie</span>
+          <span class="tag">Riscuri climatice</span>
+          <span class="tag">Balneoclimatologie</span>
+          <span class="tag">Poluare atmosferică</span>
+        </div>
+      </div>
+      <div class="hero-photo-col">
+        <div class="hero-photo-wrap">
+          <span class="hero-photo-placeholder" aria-hidden="true">DM</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <main class="main-col">
+      <section class="section">
+        <p class="sec-label">Profil academic</p>
+        <h2 class="sec-title">Despre mine</h2>
+        <p class="intro-text">
+          Între 1991 și 1996 am urmat Facultatea de Geografie și Geologie a Universității „Al. I. Cuza" din Iași, specializarea Geografie, terminând acest ciclu ca <strong>șef de promoție</strong> și licențiat în Geografie. Teza de licență a avut titlul <em>Rama deluroasă nordică a Câmpiei Moldovei. Studiu fizico-geografic</em> și a fost coordonată de Prof. univ. dr. Ioan Bojoi.
+        </p>
+        <p class="intro-text">
+          Între 1996 și 2002 am urmat cursurile doctorale la aceeași universitate. Ciclul doctoral s-a finalizat prin susținerea tezei de doctorat <em>Câmpia Moldovei. Studiu climatic</em>. Am fost coordonat de distinsa domnă Prof. univ. dr. Elena Erhan.
+        </p>
+        <p class="intro-text">
+          Din 2002 până în 2014 am fost lector univ. dr. la Departamentul de Geografie, Facultatea de Istorie și Geografie, Universitatea „Ștefan cel Mare" din Suceava, colectiv în care am fost invitat să activez de către Prof. univ. dr. Costică Brânduș (decan la acea vreme), iar din 2014 <strong>conferențiar universitar</strong>, grad obținut în urma unui concurs cu o comisie ce l-a avut coordonator pe Prof. univ. dr. em. Liviu Apostol. Din 2017 sunt <strong>abilitat în domeniul Geografie</strong>, având conducere de doctorat în acest domeniu. Comisia de abilitare l-a avut drept coordonator pe regretatul Prof. univ. dr. Gheorghe Romanescu.
+        </p>
+        <p class="intro-text">
+          Din septembrie 2024 sunt <strong>Director al Centrului de Cercetare în Geografie Aplicată (<a href="https://fig.usv.ro/cga/" target="_blank">GeA</a>)</strong>. Domeniul meu principal de expertiză acoperă <strong>meteorologia și climatologia</strong>, cu aplicații în modelarea climatică, topoclimatologie, microclimatologie, poluarea atmosferei, calitatea aerului, tendințele climatului, riscurile climatice și asociate, climatologia aplicată (climatologia urbană, climatologia agricolă, balneoclimatologia și turismul de sănătate etc.).
+        </p>
+        <p class="intro-text">
+          De-a lungul carierei, până la nivelul anului 2025 am contribuit la peste <strong>90 de publicații științifice</strong>, cinci cărți și două capitole de carte, publicând în reviste ISI cu factor de impact și participând în activitatea de cercetare la nouă granturi naționale și trei internaționale. Coordonez în prezent <strong>9 doctoranzi</strong> din care unul este în poststagiu. Patru foști doctoranzi (Prisăcariu Alin, Apopei Lidia Maria, Roșu Constantin și Țiculeanu Mihaela Nicoleta - căs. Ciurlică) și-au finalizat tezele. Cercetările mele vizează, cu precădere, spațiul dintre Carpați și Nistru, <strong>regiunea Moldova</strong>, regiunea de nord-est a României sau teritorii incluse în aceste entități geografice.
+        </p>
+        <p class="intro-text">
+          Cercetarea recentă include studii privind <strong>calitatea aerului în regiunea Moldova</strong>, încălzirea urbană, schimbările climatice, biometeorologia umană cu aplicații în Moldova, potențialul balneoclimatic al Republicii Moldova, zgomotul urban, aeroionizarea atmosferei etc.
+        </p>
+        <p class="intro-text" style="font-size:0.92rem;">
+          <strong>Indici de citare:</strong> <a href="https://www.webofscience.com/wos/author/record/ABD-6449-2021" target="_blank">Web of Science H-index = 9</a> · <a href="https://www.scopus.com/hirsch/author.uri?accessor=authorProfile&auidList=55660821400&origin=AuthorProfile&display=hIndex" target="_blank">Scopus H-index = 9</a> · <a href="https://www.researchgate.net/profile/Dumitru-Mihaila" target="_blank">ResearchGate = 11</a> · <a href="https://scholar.google.com/citations?user=sJ2FogMAAAAJ&hl=ro&oi=ao" target="_blank">Google Scholar H-index = 15</a>
+        </p>
+      </section>
+
+      <section class="section">
+        <p class="sec-label">Domenii de cercetare</p>
+        <h2 class="sec-title">Interese de cercetare</h2>
+        <div class="courses-grid">
+          <div class="course-card">
+            <p class="course-code">Principal</p>
+            <p class="course-name">Meteorologie și Climatologie</p>
+          </div>
+          <div class="course-card">
+            <p class="course-code">Aplicat</p>
+            <p class="course-name">Topoclimatologie și Microclimatologie</p>
+          </div>
+          <div class="course-card">
+            <p class="course-code">Mediu</p>
+            <p class="course-name">Poluarea atmosferei și calitatea aerului</p>
+          </div>
+          <div class="course-card">
+            <p class="course-code">Riscuri</p>
+            <p class="course-name">Riscuri și hazarduri climatice</p>
+          </div>
+          <div class="course-card">
+            <p class="course-code">Turism</p>
+            <p class="course-name">Balneoclimatologie și turism de sănătate</p>
+          </div>
+          <div class="course-card">
+            <p class="course-code">Evoluție</p>
+            <p class="course-name">Evoluția climatului și schimbări climatice</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="sec-label">Cercetare recentă</p>
+        <h2 class="sec-title">Publicații și contribuții recente</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-badge isi">ISI</span>
+            <div>
+              <p class="pub-title">Summer Discrepancies between 2 m Air Temperature and Landsat LST in Suceava City, Northeastern Romania</p>
+              <p class="pub-meta"><strong>Mihăilă D., Bistricean P.-I., Sfîcă L., Horodnic V.-D., Prisăcariu A., Amihăesei V.-A.</strong> — <em>Remote Sensing</em>, 2024, 16, 2967. Q2-AIS/2024. <a href="https://doi.org/10.3390/rs16162967" target="_blank">doi:10.3390/rs16162967</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="pub-badge isi">ISI</span>
+            <div>
+              <p class="pub-title">The connections between meteorological conditions and the health status of the population of Suceava municipality. A case study on respiratory afflictions throughout the years 2019-2020 in Suceava</p>
+              <p class="pub-meta"><strong>Țiculeanu (Ciurlică) M., Mihăilă D., Bistricean P.I., Lucian S., Lazurca (Andrei) L.G., Mihalache A., Silișteanu C.S.</strong> — <em>Balneo and PRM Research Journal</em>, 2024, 15(2): 714</p>
+            </div>
+          </li>
+          <li>
+            <span class="pub-badge isi">ISI</span>
+            <div>
+              <p class="pub-title">A bioclimatic evaluation of sustainable tourist activities in western Romania</p>
+              <p class="pub-meta"><strong>Mihăilă D., Bistricean P.-I., Gaceu R.-O., Emandi E.-M., Mihăilă E.-V., Horodnic V.-D.</strong> — <em>Heliyon</em>, 2024, Q2-AIS/2024, e29510. <a href="https://doi.org/10.1016/j.heliyon.2024.e29510" target="_blank">doi:10.1016/j.heliyon.2024.e29510</a></p>
+            </div>
+          </li>
+          <li>
+            <span class="pub-badge isi">ISI</span>
+            <div>
+              <p class="pub-title">The thermal perceptions of people in relation to meteorological observations. Case study for the urban agglomeration in Suceava - NE Romania</p>
+              <p class="pub-meta"><strong>Mihăilă D., Țiculeanu (Ciurlică) M., Bistricean P.-I., Lazurca L.G., Silișteanu S.-C.</strong> — <em>Balneo and PRM Research Journal</em>, 2024, 15(1):644. DOI 10.12680/balneo.2024.644</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+    <aside class="side-col">
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-num">90+</div>
+          <div class="stat-label">Publicații</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">5</div>
+          <div class="stat-label">Cărți</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Ani experiență</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">11</div>
+          <div class="stat-label">Granturi</div>
+        </div>
+      </div>
+
+      <div id="contact" class="side-card">
+        <p class="side-card-title">Contact</p>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M2 4l6 5 6-5M2 4h12v9H2V4z"/>
+          </svg>
+          <div>
+            <a href="mailto:dumitrum@atlas.usv.ro">dumitrum@atlas.usv.ro</a><br>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M8 1.5a5 5 0 100 10A5 5 0 008 1.5zM8 14.5v-3M5 13.5l1.5-2.5M11 13.5l-1.5-2.5"/>
+          </svg>
+          <span>Interior: 556 · Birou E214</span>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M8 1C5.24 1 3 3.24 3 6c0 4 5 9 5 9s5-5 5-9c0-2.76-2.24-5-5-5zm0 6.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
+          </svg>
+          <span>Str. Universității 13, 720229 Suceava</span>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <p class="side-card-title">Profil academic</p>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="8" r="6"/><path d="M8 5v4l2.5 1.5"/>
+          </svg>
+          <div>
+            <a href="https://fig.usv.ro/team/dumitru-mihaila/" target="_blank" rel="noopener">Profil FIGSS–USV</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="8" r="6"/><path d="M5.5 8h5M8 5.5v5"/>
+          </svg>
+          <div>
+            <a href="https://www.researchgate.net/profile/Dumitru-Mihaila" target="_blank" rel="noopener">ResearchGate</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="10" height="10" rx="1"/><path d="M6 8h4M8 6v4"/>
+          </svg>
+          <div>
+            <a href="https://scholar.google.com/citations?user=sJ2FogMAAAAJ&hl=ro&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="10" height="10" rx="1"/><path d="M6 8h4M8 6v4"/>
+          </svg>
+          <div>
+            <a href="https://orcid.org/0000-0002-5876-7963" target="_blank" rel="noopener">ORCID: 0000-0002-5876-7963</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="8" r="6"/><path d="M5.5 8h5M8 5.5v5"/>
+          </svg>
+          <div>
+            <a href="https://www.webofscience.com/wos/author/record/ABD-6449-2021" target="_blank" rel="noopener">Web of Science</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="8" r="6"/><path d="M5.5 8h5M8 5.5v5"/>
+          </svg>
+          <div>
+            <a href="https://www.scopus.com/hirsch/author.uri?accessor=authorProfile&auidList=55660821400&origin=AuthorProfile&display=hIndex" target="_blank" rel="noopener">Scopus</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <svg class="contact-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="10" height="10" rx="1"/><path d="M6 8h4M8 6v4"/>
+          </svg>
+          <div>
+            <span>BRAINMAP: U-1700-029V-7957</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+  
+  <footer>
+    <p><strong>Conf. dr. habil. Dumitru Mihăilă</strong></p>
+    <p style="margin-top:0.4rem;">
+      Departamentul de Geografie ·
+      <a href="https://fig.usv.ro">Facultatea de Istorie, Geografie și Științe Sociale</a> ·
+      <a href="https://www.usv.ro">Universitatea „Ștefan cel Mare" din Suceava</a>
+    </p>
+        <p id="visit-counter" style="margin-top:0.5rem;font-size:0.7rem;opacity:0.4;"></p>
+    <p style="margin-top:0.8rem;opacity:0.45;font-size:0.72rem;">© 2024 Dumitru Mihăilă · Toate drepturile rezervate</p>
+  </footer>
+
+<script>
+(function(){var c=parseInt(localStorage.getItem('site_visits')||'0')+1;localStorage.setItem('site_visits',c);var el=document.getElementById('visit-counter');if(el)el.textContent='Vizite: '+c;})();
+</script>
+<script>
+function toggleDark(){document.body.classList.toggle('dark');localStorage.setItem('dark_mode',document.body.classList.contains('dark')?'1':'0');var btn=document.getElementById('dark-toggle');if(btn)btn.textContent=document.body.classList.contains('dark')?'\u2600':'\u263e';}
+(function(){if(localStorage.getItem('dark_mode')==='1'){document.body.classList.add('dark');var btn=document.getElementById('dark-toggle');if(btn)btn.textContent='\u2600';}})();
+</script>
+<script>
+(function(){var els=document.querySelectorAll('.section, .announcement, .file-card, .tl-item, .course-card, .side-card, .stat-box, .pub-list li');els.forEach(function(el){el.classList.add('fade-in');});requestAnimationFrame(function(){els.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0){el.classList.add('visible');}});var observer=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.05});els.forEach(function(el){if(!el.classList.contains('visible')){observer.observe(el);}});});})();
+</script>
+</body>
+</html>
